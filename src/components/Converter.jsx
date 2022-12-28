@@ -24,21 +24,21 @@ const Table = () => {
 
   const changeFirst = (e) => {
     setFirstVal(e.target.value)
-    setSecondVal((e.target.value*secondOpt).toFixed(3))
+    setSecondVal((e.target.value*secondOpt/firstOpt).toFixed(3))
   }
   const changeSecond = (e) => {
     setSecondVal(e.target.value)
-    setFirstVal((e.target.value*firstOpt).toFixed(3))
+    setFirstVal((e.target.value*firstOpt/secondOpt).toFixed(3))
   }
 
 
   const firstOption = (e) => {
     setFirstOpt(e.target.value)
-    setSecondVal((e.target.value*secondOpt).toFixed(3))
+    setSecondVal((e.target.value*secondOpt/firstOpt).toFixed(3))
   }
   const secondOption = (e) => {
     setSecondOpt(e.target.value)
-    setFirstVal((e.target.value*firstOpt).toFixed(3))
+    setFirstVal((e.target.value*firstOpt/secondOpt).toFixed(3))
   }
 
   return (
