@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #FFCC70;
+  background-image: linear-gradient(43deg, #FFCC70 0%, #C850C0 46%, #4158D0 100%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.convert {
+  width: 25rem;
+  height: 20rem;
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+  border: 0.5px solid black;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  justify-content: center;
+  align-items: center;
+}
+
+input {
+  padding: 1rem;
+  border-radius: 20px;
+}
+
+select {
+  padding: 1rem;
+  border-radius: 20px;
+}
